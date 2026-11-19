@@ -1,0 +1,41 @@
+{
+  "seeds": 20,
+  "clients_per_seed": 4,
+  "local_aggregation": "equal-weight mean of individual client accuracies within seed, then median/IQR across seeds",
+  "horizon": 100000,
+  "display_min_step": 100,
+  "shared_fedavg_observations_per_seed": [
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90
+  ],
+  "fedavg": {
+    "final_median_accuracy": 1.0,
+    "maximum_median_accuracy": 1.0
+  },
+  "local_own": {
+    "final_median_accuracy": 0.8785850694444444,
+    "maximum_median_accuracy": 0.9205598958333334
+  },
+  "local_global": {
+    "final_median_accuracy": 0.4021692439862543,
+    "maximum_median_accuracy": 0.4344662800687285
+  }
+}

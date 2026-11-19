@@ -1,0 +1,6 @@
+*.pdf binary
+*.png binary
+*.npz binary
+data/** -text
+reference/** -text
+*.csv -text whitespace=cr-at-eol

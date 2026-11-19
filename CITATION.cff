@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software when using its code or saved results."
+type: software
+title: "Federated grokking: cross-client generalization diagnostics"
+authors:
+  - family-names: Bakshi
+    given-names: Mayank
+version: 0.1.0
+date-released: 2026-11-19
+license: MIT
+abstract: "Preliminary study and reproducible analysis of cross-client kernel-label alignment in federated modular-division learning."
+repository-code: "https://github.com/mayankbakshi/federated-grokking"

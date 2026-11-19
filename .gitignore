@@ -1,0 +1,14 @@
+.venv/
+.venv-training/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+output/
+
+# Local tooling and credentials
+.ruff_cache/
+.env
+.env.*
+*.pem
+*.key

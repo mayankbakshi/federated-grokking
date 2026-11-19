@@ -1,0 +1,23 @@
+{
+  "data_files_checked": 160,
+  "statistics_exact": true,
+  "per_seed_csv_exact": true,
+  "figure_pixels_exact": true,
+  "png_bytes_exact": true,
+  "reference_dimensions": [
+    1290,
+    2475
+  ],
+  "reproduced_dimensions": [
+    1290,
+    2475
+  ],
+  "positive_leads": 18,
+  "mean_lead_steps": 529.5,
+  "bootstrap_ci": [
+    358.5,
+    711.0124999999998
+  ],
+  "pooled_crossings": 17,
+  "no_sharing_crossings": 0
+}
