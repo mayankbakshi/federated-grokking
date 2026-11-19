@@ -1,8 +1,10 @@
 # Federated grokking: cross-client generalization diagnostics
 
-Code and saved results for a preliminary study of whether a compact kernel diagnostic tracks emerging generalization across clients with disjoint data domains. The study provided preliminary evidence for subsequent research proposals on grokking and collective generalization.
+Code and saved results for a preliminary study of whether a compact kernel diagnostic tracks emerging generalization across clients with disjoint data domains. Scientific surrogates must learn from scarce observations distributed across assets with different operating conditions; this controlled arithmetic study examines the underlying generalization question, not a surrogate deployment. The study supported subsequent research proposals on scientific surrogates and collective generalization.
 
-**Author:** Mayank Bakshi. **Status:** preliminary, not peer reviewed. Manuscript in preparation for submission; draft available upon request.
+I designed, implemented, ran, and analyzed the study, including the sketch, cross-client controls, and exclusion of the readout head. The pooled-data control refuted federation specificity, narrowing the interpretation to a preliminary association with generalization.
+
+**Author:** Mayank Bakshi. **Status:** preliminary, not peer reviewed. Manuscript in preparation for conference submission; draft available upon request.
 
 [One-page research sample](docs/research-sample.pdf)
 
