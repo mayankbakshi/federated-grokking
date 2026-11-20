@@ -8,7 +8,7 @@ I designed, implemented, ran, and analyzed the study, including the sketch, cros
 
 [One-page research sample](docs/research-sample.pdf)
 
-Related exploration: [generalization transitions in synthetic language tasks with GPT-2-style decoders](explorations/gpt2_composition/). This companion study examines relational composition, a short training/generalization lag, and an objective-level failure diagnosed through checkpoint rescoring. It includes saved results and runnable code; the decoder is trained from scratch, and the observations do not establish pronounced grokking.
+Related exploration: [generalization transitions in synthetic language tasks with GPT-2-style decoders](explorations/gpt2_composition/) ([plain-text account](https://raw.githubusercontent.com/mayankbakshi/federated-grokking/main/explorations/gpt2_composition/README.md)). An eight-layer decoder trained from scratch on symbolic relations showed an objective-level failure: answer-only training recovered over 99.9% in-distribution atomic-fact accuracy in the saved run while out-of-distribution composition stayed near zero. Rescoring the archived full-sequence checkpoints ruled out a scoring-only explanation. This is one world and one seed per objective, with unequal training durations; it does not establish systematic compositional generalization or pronounced grokking. The linked study includes the exact setup, curves, code and saved evidence.
 
 ![Three-panel study figure](reference/figure.png)
 
