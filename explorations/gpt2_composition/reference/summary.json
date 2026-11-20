@@ -1,0 +1,54 @@
+{
+  "full_sequence": {
+    "observations": 23,
+    "last_step": 150000,
+    "final_accuracy": {
+      "id_atomic": 0.16966666666666666,
+      "ood_atomic": 1.0,
+      "train_inferred": 1.0,
+      "test_inferred_id": 1.0,
+      "inferred_ood": 0.004016064257028112
+    },
+    "first_observed_at_or_above_99_percent": {
+      "id_atomic": null,
+      "ood_atomic": 12000,
+      "train_inferred": 8000,
+      "test_inferred_id": 10000,
+      "inferred_ood": null
+    }
+  },
+  "answer_only": {
+    "observations": 4,
+    "last_step": 8000,
+    "final_accuracy": {
+      "id_atomic": 0.9996666666666667,
+      "ood_atomic": 0.992,
+      "train_inferred": 1.0,
+      "test_inferred_id": 0.9978540772532188,
+      "inferred_ood": 0.0
+    },
+    "first_observed_at_or_above_99_percent": {
+      "id_atomic": 6000,
+      "ood_atomic": 8000,
+      "train_inferred": 6000,
+      "test_inferred_id": 6000,
+      "inferred_ood": null
+    }
+  },
+  "rescored_checkpoints": 21,
+  "rescore_matches_original_accuracy_exactly": true,
+  "full_sequence_rescored_endpoint": {
+    "step": 50000,
+    "acc": {
+      "id_atomic": 0.186,
+      "ood_atomic": 0.998,
+      "train_inferred": 1.0,
+      "test_inferred_id": 1.0,
+      "inferred_ood": 0.002008032128514056
+    },
+    "eval_rule": "bounded_decode",
+    "source_run": "model-v0-n_entities_200",
+    "source_loss_mode": "full_sequence"
+  },
+  "interpretation": "A short observed training/generalization lag in the full-sequence run; no pronounced delayed transition established in either run."
+}

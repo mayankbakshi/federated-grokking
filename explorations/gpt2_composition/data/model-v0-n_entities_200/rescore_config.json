@@ -1,0 +1,39 @@
+{
+  "source_run": "model-v0-n_entities_200",
+  "source_run_dir": ".",
+  "source_loss_mode": "full_sequence",
+  "eval_rule": "bounded_decode",
+  "steps": [
+    2000,
+    4000,
+    6000,
+    8000,
+    10000,
+    12000,
+    14000,
+    16000,
+    18000,
+    20000,
+    22000,
+    24000,
+    26000,
+    28000,
+    30000,
+    32000,
+    34000,
+    36000,
+    38000,
+    40000,
+    50000
+  ],
+  "eval_cap": 3000,
+  "device": "cpu",
+  "model": {
+    "n_layer": 8,
+    "n_embd": 768,
+    "n_head": 12,
+    "n_positions": 10,
+    "dropout": 0.1
+  },
+  "rescored_at": "2026-07-30T16:39:49"
+}

@@ -8,6 +8,8 @@ I designed, implemented, ran, and analyzed the study, including the sketch, cros
 
 [One-page research sample](docs/research-sample.pdf)
 
+Related exploration: [generalization transitions in synthetic language tasks with GPT-2-style decoders](explorations/gpt2_composition/). This companion study examines relational composition, a short training/generalization lag, and an objective-level failure diagnosed through checkpoint rescoring. It includes saved results and runnable code; the decoder is trained from scratch, and the observations do not establish pronounced grokking.
+
 ![Three-panel study figure](reference/figure.png)
 
 The release contains the complete **20-seed, three-regime diagnostic battery** (60 saved arrays) and **100 saved accuracy-comparison files** (20 model averaging runs and 80 individual local-only runs), plus analysis, plotting, and standalone training code. The figure above can be reproduced locally; no account, logging service, or model download is needed.

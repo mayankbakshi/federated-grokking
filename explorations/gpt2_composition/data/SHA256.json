@@ -1,0 +1,10 @@
+{
+  "data/model-v0-n_entities_200/config.json": "fcd25d7b7d9171c1d108fbb80860d4401b371c089bbf8fde20bb0d000b13c2b8",
+  "data/model-v0-n_entities_200/metrics.jsonl": "66d1a831948d96e1ae5eca06a989a4bf6b62020ea54f7e93cc8ff5ed780009d9",
+  "data/model-v0-n_entities_200/rescore.jsonl": "6968d1dbecfa78f6d807514ae6b4669e59c75356eacaa6e5edeeeca7e0f0c93f",
+  "data/model-v0-n_entities_200/rescore_config.json": "b478731b0355015a2510ecfe3460b12acf264fc14b85b0e518d715d76a4ce225",
+  "data/model-v1-diag-phi18/config.json": "1534629d58765386dd2ac01ebe01ce99e4aba405fb1b438260a8c20d86b09758",
+  "data/model-v1-diag-phi18/metrics.jsonl": "b284775c8a22156bab4c21a23e0fbf64a548128f6102034716705456beed7e19",
+  "data/world/meta.json": "4b9ff7ded3d2e84d0491a2959c017ac729e5524f231e1124a95a37dd2fa04e7c",
+  "data/world/world.npz": "419dec1adbe36c30c740b67e1c6da29786c46af77897cf577b683a4ce3af4957"
+}

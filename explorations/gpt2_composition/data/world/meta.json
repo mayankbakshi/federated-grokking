@@ -1,0 +1,24 @@
+{
+  "task": "composition",
+  "world_id": "E500_R200_deg20_idf0.95_res0.005_seed0",
+  "config": {
+    "task": "composition",
+    "n_entities": 500,
+    "n_relations": 200,
+    "out_degree": 20,
+    "atomic_id_frac": 0.95,
+    "id_test_reserve_p": 0.005,
+    "data_seed": 0
+  },
+  "counts": {
+    "n_atomic": 10000,
+    "n_atomic_id": 9500,
+    "n_atomic_ood": 500,
+    "n_paths": 200000,
+    "n_inferred_cand": 179552,
+    "n_inferred_te": 932,
+    "n_inferred_ood": 498
+  },
+  "vocab_size": 706,
+  "sha256": "d8dceb6c0b8cc1a4eabdc68a23f6589427dd0fe7bcace1fdbe775362f978acbd"
+}

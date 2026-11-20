@@ -1,0 +1,38 @@
+{
+  "run_name": "model-v1-diag-phi18",
+  "task": "composition",
+  "world_dir": "../world",
+  "phi": 18.0,
+  "vocab_size": 706,
+  "model": {
+    "n_layer": 8,
+    "n_embd": 768,
+    "n_head": 12,
+    "n_positions": 10,
+    "dropout": 0.1
+  },
+  "train": {
+    "phi": 18.0,
+    "train_seed": 42,
+    "batch_size": 512,
+    "lr": 0.0001,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "warmup_steps": 2000,
+    "max_steps": 20000,
+    "max_grad_norm": 1.0,
+    "loss_mode": "answer_only",
+    "precision": "fp32",
+    "device": "auto",
+    "num_workers": 2,
+    "num_threads": 4,
+    "eval_cap": 3000,
+    "dense_every": 2000,
+    "dense_until": 40000,
+    "sparse_every": 50000
+  }
+}

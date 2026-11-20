@@ -1,0 +1,4 @@
+{"step": 2000, "loss": 4.192390441894531, "lr": 0.0001, "acc": {"id_atomic": 0.04766666666666667, "ood_atomic": 0.004, "train_inferred": 0.046, "test_inferred_id": 0.033261802575107295, "inferred_ood": 0.0}}
+{"step": 4000, "loss": 1.7646623849868774, "lr": 0.0001, "acc": {"id_atomic": 0.971, "ood_atomic": 0.04, "train_inferred": 0.7776666666666666, "test_inferred_id": 0.45064377682403434, "inferred_ood": 0.002008032128514056}}
+{"step": 6000, "loss": 0.06275802105665207, "lr": 0.0001, "acc": {"id_atomic": 0.9993333333333333, "ood_atomic": 0.982, "train_inferred": 1.0, "test_inferred_id": 0.9967811158798283, "inferred_ood": 0.002008032128514056}}
+{"step": 8000, "loss": 0.021275486797094345, "lr": 0.0001, "acc": {"id_atomic": 0.9996666666666667, "ood_atomic": 0.992, "train_inferred": 1.0, "test_inferred_id": 0.9978540772532188, "inferred_ood": 0.0}}
