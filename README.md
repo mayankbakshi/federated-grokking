@@ -8,7 +8,7 @@ I designed, implemented, ran, and analyzed the study, including the sketch, cros
 
 [One-page research sample](docs/research-sample.pdf)
 
-Related exploration: [generalization transitions in synthetic language tasks with GPT-2-style decoders](explorations/gpt2_composition/) ([plain-text account](https://raw.githubusercontent.com/mayankbakshi/federated-grokking/main/explorations/gpt2_composition/README.md)). An eight-layer decoder trained from scratch on symbolic relations showed an objective-level failure: answer-only training recovered over 99.9% in-distribution atomic-fact accuracy in the saved run while out-of-distribution composition stayed near zero. Rescoring the archived full-sequence checkpoints ruled out a scoring-only explanation. This is one world and one seed per objective, with unequal training durations; it does not establish systematic compositional generalization or pronounced grokking. The linked study includes the exact setup, curves, code and saved evidence.
+Related exploration: [generalization transitions in synthetic language tasks with GPT-2-style decoders](explorations/gpt2_composition/) ([plain-text account](https://raw.githubusercontent.com/mayankbakshi/federated-grokking/main/explorations/gpt2_composition/README.md)). An eight-layer decoder trained from scratch on symbolic relations showed an objective-level failure: answer-only training recovered over 99.9% accuracy on atomic facts that had appeared both individually and within training compositions. Compositions involving facts withheld from composition training stayed near zero, although those facts had been seen individually. Rescoring the archived full-sequence checkpoints ruled out a scoring-only explanation. This is one world and one seed per objective, with unequal training durations; it does not establish systematic compositional generalization or pronounced grokking. The linked study includes the exact setup, curves, code and saved evidence.
 
 ![Three-panel study figure](reference/figure.png)
 
@@ -18,7 +18,7 @@ The release contains the complete **20-seed, three-regime diagnostic battery** (
 
 Panel A compares model averaging with local-only training. Model averaging reaches high accuracy on the shared global test. Local-only models learn their own bands later and remain substantially worse on the global test. The local curves first average the four individual client accuracies within each seed, then show medians and interquartile ranges over 20 seeds. These are individual-model evaluations, distinct from the parameter-mean control in panel B. Each isolated client has roughly one quarter of the collective training data. This comparison therefore shows collaboration versus isolation; it does not isolate communication from data access or establish a speedup ratio. Pooled training supplies the data-matched control for the diagnostic.
 
-The cross-client marker precedes **sustained 90% held-out accuracy** in 18/20 model averaging runs. The mean retrospective lead is 529.5 training steps, displayed as 530; its 95% bootstrap interval is [358.5, 711.0125], displayed as [358, 711]. The two negative leads, -100 and -10 steps, are retained.
+Retrospectively, the cross-client marker precedes **sustained 90% held-out accuracy** in 18/20 model averaging runs. The mean retrospective lead is 529.5 training steps, displayed as 530; its 95% bootstrap interval is [358.5, 711.0125], displayed as [358, 711]. The two negative leads, -100 and -10 steps, are retained.
 
 The pooled-data control also crosses the marker threshold in **17/20 runs**. Thus the planned test of federation specificity failed. The result supports a preliminary association with the generalization transition, not a signal unique to federation or a validated online warning system. The no-sharing control crosses in 0/20 runs, but also supplies calibration and therefore cannot independently establish a false-alarm rate.
 
@@ -69,7 +69,7 @@ Step labels follow the original implementation: **step 0 is measured after the f
 
 ## What the marker measures
 
-For each pair of probe inputs, estimate the trace neural tangent kernel by averaging gradient inner products from eight random projections of the output logits. Exclude the final readout-head parameters. Compare the resulting kernel with the label-equality Gram matrix after global centering.
+The diagnostic asks whether examples with the same known label have similar parameter gradients, within and across clients. For each pair of probe inputs, estimate the trace neural tangent kernel by averaging gradient inner products from eight random projections of the output logits. Exclude the final readout-head parameters. Compare the resulting kernel with the label-equality Gram matrix after global centering.
 
 Within-band and cross-band alignment are separate Frobenius cosines restricted to same-band and different-band pairs. Their numerators decompose, but the separately normalized alignment values need not add to the global alignment. Random projection is unbiased for the trace kernel; that does not imply unbiased normalized alignment or establish a detection guarantee.
 
