@@ -34,3 +34,7 @@ PyTorch reported its standard nested-tensor and CPU-attention vectorization perf
 After source-format cleanup, the eleven existing tests passed in Python 3.11.15 with PyTorch 2.12.0, NumPy 2.4.4, and pytest 9.0.3. A further regression check passed for censored accuracy and marker onsets: the lead summary now rejects these inputs instead of assigning zero leads. All 160 saved source-file hashes remain unchanged. Exact figure pixels, PNG bytes, per-seed CSV, comparison summaries, and statistics were reproduced again with the pinned figure environment.
 
 The full training battery was not rerun. Source formatting, clarified comments, the removed unused test import, and the censoring guard do not alter the saved study's numerical results.
+
+## Research summary, November 19, 2026
+
+The one-page study summary now explains the scientific-surrogate motivation and how the pooled-data control narrowed the interpretation. It retains the retrospective lead calculation, shared-probe and calibration limitations, and the distinction between observed generalization and a demonstrated grokking transition. The figure and saved numerical evidence are unchanged.
