@@ -38,3 +38,5 @@ The full training battery was not rerun. Source formatting, clarified comments, 
 ## Research summary, November 19, 2026
 
 The one-page study summary now explains the scientific-surrogate motivation and how the pooled-data control narrowed the interpretation. It retains the retrospective lead calculation, shared-probe and calibration limitations, and the distinction between observed generalization and a demonstrated grokking transition. The figure and saved numerical evidence are unchanged.
+
+The sample is titled "Generalization in federated learning" to describe the demonstrated evidence without asserting a classic grokking transition. This title revision does not change the figure, methods, results or limitations.
